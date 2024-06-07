@@ -68,3 +68,18 @@ function login(username,password){
 //invoking a function
 login('Steev vhoo','4334')
 
+// Basic arithmetic operations
+14%5
+Math.random() * 100
+'3'+' beautiful'
+'2' * 4
+
+
+// String in Js
+//Concatenation
+const firstName = 'Steev';
+const lastName = 'Vhoo';
+firstName + ' '+ lastName;
+
+//Template literal
+`${firstName}`
