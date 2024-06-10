@@ -105,3 +105,28 @@ addParticipant('holdbrook@gmail.com')
 addParticipant('vhoobroo@icloud.com')
 participant;
 participant;
+
+// Arrays in Js
+const users = [
+  {
+    username:'Steev',
+    password: '12345',
+    email: 'vhoo@gmail.com'
+  },
+   {
+    username:'Ama',
+    password: '12345',
+    email: 'dagna@gmail.com'
+  },
+   {
+    username:'Naa',
+    password: '12345',
+    email: 'naakoshie@gmail.com'
+  },
+   {
+    username:'Kpakpo16',
+    password: '12345',
+    email: 'kpapz@gmail.com'
+  },
+]
+users;
