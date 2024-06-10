@@ -83,3 +83,25 @@ firstName + ' '+ lastName;
 
 //Template literal
 `${firstName}`
+
+
+// Write a function that will add a participant to our Google classroom
+const participant = []
+function addParticipant(email) {
+  //Check if email was provided
+  if (email === undefined || email === null){
+    return 'No email provided';
+  }
+  //Check if email is valid
+  if (!email.includes('@')){
+    return 'Invalid email provided';
+  }
+  // Add email to participants 
+  participant.push(email)
+  return 'Participant added';
+}
+
+addParticipant('holdbrook@gmail.com')
+addParticipant('vhoobroo@icloud.com')
+participant;
+participant;
