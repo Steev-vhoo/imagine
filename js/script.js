@@ -130,3 +130,47 @@ const users = [
   },
 ]
 users;
+
+// Write a function that will take a user with firstname and lastname and return fullname
+function userName() {
+  return{
+    ...user, //three dots is called a spread and rearranges the array 
+    fullName: `${user.firstName} ${user.lastName}`
+  }
+    return `${user.firstName} ${user.lastName}`;
+}
+  const user = {
+      firstName : "Steev",
+      lastName : "vhoo"
+  }
+userName(user);
+
+//Array map
+const users = [
+{firstName: 'Michael', lastName: 'Hammond'},
+{firstName: 'Ama', lastName: 'Atta'},
+{firstName: 'Rachael', lastName: 'Ludwig'},
+{firstName: 'Banki', lastName: 'Moon'},
+{firstName: 'Burna', lastName: 'Bwoy'},
+]
+users.map(userName)
+
+function squaredNum(newNum) {
+  const squareNum = newNum * newNum;
+  return `The square is ${squareNum}`;
+}
+squaredNum(6);
+const numbers = [2,3,4,5,6,7,8,9,10]
+numbers.map(squaredNum)
+
+
+//Array filter
+function isEven(evenNum) {
+  if (evenNum % 2 ===0){
+    return true;
+  } else {
+    return false;
+  }
+}
+numbers.filter(isEven);
+isEven(5)
