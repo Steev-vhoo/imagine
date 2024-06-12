@@ -174,3 +174,25 @@ function isEven(evenNum) {
 }
 numbers.filter(isEven);
 isEven(5)
+
+//Write a function that will allow a user to reset their password
+const user = {
+  email: 'mickeymond@gmail.com',
+  password: '12345'
+}
+function passwordReset(email, newPassword){
+// Check if provided email and password was provided
+if (!email || !newPassword){
+  return 'Email or password not provided'
+}  
+//Update password with new one
+if (email=== user.email){
+ user.password = newPassword;
+  return `Password reset successful`;
+}
+if (email !== user.email){
+  return `invalid email`;
+}
+}
+
+passwordReset()
