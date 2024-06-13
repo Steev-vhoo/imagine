@@ -196,3 +196,41 @@ if (email !== user.email){
 }
 
 passwordReset()
+
+
+//You have been given an array of students with some of them marked as present and others marked as absent. write a function to return the total number of students present.
+const students = [
+  { id: 1, present: true },
+  { id: 2, present: true },
+  { id: 3, present: false },
+  { id: 4, present: true },
+  { id: 5, present: false },
+];
+
+function studentPresent(){
+  
+if (students === false){
+  students.pop();
+}
+const totalStudentPresent = students.length -2;
+return `There are ${totalStudentPresent} students present`   
+
+  
+ 
+}
+
+studentPresent()
+
+
+//Classes in Javascript
+class laptop {
+  constructor(brand, color){
+    this.brand = brand;
+    this.color = color;
+  }
+}
+
+const laptop1 = new laptop('Dell', 'black');
+const laptop2 = new laptop('Lenovo', 'blue');
+laptop2.color;
+
